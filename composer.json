@@ -1,0 +1,34 @@
+{
+    "name": "thenandan/thebroker",
+    "description": "A message broker package for laravel.",
+    "type": "laravel-library",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Keshari Nandan",
+            "email": "thenandan4@gmail.com",
+            "homepage": "https://github.com/thenandan"
+        }
+    ],
+    "homepage": "https://github.com/thenandan/thebroker",
+    "keywords": ["Laravel Activemq", "Laravel Rabbitmq", "Laravel Message Broker"],
+    "require": {
+        "php": "^7.1.3"
+    },
+    "require-dev": {
+        "illuminate/support": "^5.5|^6",
+        "laravel/framework": "^5.6|^5.7|^5.8|^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "TheNandan\\TheLogger\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheNandan\\TheBroker\\TheBrokerServiceProvider"
+            ]
+        }
+    }
+}
