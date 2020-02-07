@@ -14,14 +14,14 @@
     "keywords": ["Laravel Activemq", "Laravel Rabbitmq", "Laravel Message Broker"],
     "require": {
         "php": "^7.1.3",
-        "php-amqplib/php-amqplib": ">=2.9.0"
+        "php-amqplib/php-amqplib": "2.11.*"
     },
     "require-dev": {
-
+        "roave/security-advisories": "dev-master"
     },
     "autoload": {
         "psr-4": {
-            "TheNandan\\TheLogger\\": "src/"
+            "TheNandan\\TheBroker\\": "src/"
         }
     },
     "extra": {

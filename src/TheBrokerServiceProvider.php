@@ -1,6 +1,6 @@
 <?php
 
-namespace TheNandan\TheLogger;
+namespace TheNandan\TheBroker;
 
 use Illuminate\Contracts\Container\BindingResolutionException;
 use Illuminate\Contracts\Http\Kernel;
