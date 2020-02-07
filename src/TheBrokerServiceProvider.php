@@ -21,7 +21,6 @@ class TheBrokerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-
         $manager = $this->app->make('queue');
         $this->registerRebbitMQConnector($manager);
     }
@@ -42,8 +41,8 @@ class TheBrokerServiceProvider extends ServiceProvider
      */
     protected function registerRebbitMQConnector($manager)
     {
-//        $manager->addConnector('rabbitmq', function () {
-//            return new RabbitMQConnector;
-//        });
+        $manager->addConnector('rabbitmq', function () {
+            return new RabbitMQConnector;
+        });
     }
 }
